@@ -1,0 +1,21 @@
+{
+  "name": "primera_base_de_datos",
+  "version": "1.0.0",
+  "description": "npm init -y\r npm i express\r npm install express-handlebars\r npm i knex mysql\r npm install express socket.io\r npm i knex sqlite3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "knex": "^2.2.0",
+    "mysql": "^2.18.1",
+    "socket.io": "^4.5.1",
+    "sqlite3": "^5.0.11"
+  }
+}

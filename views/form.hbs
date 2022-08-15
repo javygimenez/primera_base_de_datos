@@ -1,0 +1,50 @@
+{{!-- form --}}
+<section class="p-4">
+    <form id="form-add-product" class="card-body border border-5 col-lg-4 container-md mt-5 p-4 bg-light">
+    <h2 class="text-danger">Ingresar Productos</h2>
+    <div class="mb-3">
+      <label class="form-label" for="name">Nombre</label>
+      <input type="text" class="form-control" id="name-product" name="name" placeholder="Ingrese nombre del producto">
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="price">Precio</label>
+      <input type="number" class="form-control" id="price-product" name="price" placeholder="Ingrese precio del producto">
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="img">Imagen</label>
+      <input type="url" class="form-control" id="img-product" name="img" placeholder="Ingrese una imagen del producto">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Agregar</button>
+  </form>
+</section>
+
+{{!-- tabla --}}
+<section class="p-4 bg-light">
+	<h2 class="text-primary">Listado de Productos</h2>
+	<table class="table table-dark table-striped container-md mt-5">
+		<thead>
+			<tr class="row-cols-2">
+				<th scope="col">Nombre</th>
+				<th scope="col">Precio</th>
+				<th scope="col">Imagen</th>
+			</tr>
+		</thead>
+		<tbody id="table-products"></tbody>
+	</table>
+	<h2 id="no-products" class="bg-light p-4 text-danger text-center">No hay productos en la lista</h2>
+</section>
+
+{{!-- chat --}}
+<section class="p-4 bg-light mt-4 card-body border border-5 col-lg-7 container-md mt-5 bg-light" style="--bs-bg-opacity: .5;">
+	<h2 class="text-primary mb-4">Centro de Mensajes</h2>
+	<input id="user-email" class="form-control col-6" type="mail" id="usermail" placeholder="Ingresa tu email">
+	<hr>
+	<div id="table-chat" class="my-4 bg-light"></div>
+    <hr>
+	<form id="chat-form" class="form-inline">
+		<input id="chat-message" class="form-control mb-3" type="text" name="chatmessage"
+			placeholder="Ingresá un mensaje...">
+		<button class="btn btn-primary" type="submit">Enviar</button>
+	</form>
+</section>
